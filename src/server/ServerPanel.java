@@ -78,11 +78,11 @@ public class ServerPanel extends JFrame {
 					} else {
 						lbl.setBackground(Color.WHITE);
 					}
-					lbl.setBorder(BorderFactory.createLineBorder(Color.WHITE, 3));
+					lbl.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY, 3));
 					innerPanel.add(lbl);
 				} catch (Exception e) {
 					lbl.setBackground(Color.LIGHT_GRAY);
-					lbl.setBorder(BorderFactory.createLineBorder(Color.WHITE, 3));
+					lbl.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY, 3));
 					innerPanel.add(lbl);
 					continue;
 				}
