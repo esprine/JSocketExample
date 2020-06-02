@@ -31,8 +31,7 @@ public class Receiver implements Runnable{
                 	Server.first.dispose();
                 	panel = new ServerPanel(ip_address);
                 	i++;
-            	}
-            	else {
+            	} else {
                 	String msg = in.readUTF();
                 	String ip_addr = this.socket.getInetAddress().toString();
                 	String ip_address = this.socket.getLocalAddress().toString();

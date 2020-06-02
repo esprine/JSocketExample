@@ -7,9 +7,7 @@ public class Server {
 	
     public static void main(String arg[])
     {
-        //접속한 Client와 통신하기 위한 Socket
-        Socket socket = null;           
-        //Client 접속을 받기 위한 ServerSocket            
+        Socket socket = null;                      
         ServerSocket server_socket = null;              
         
         int count = 0;                            
@@ -19,7 +17,7 @@ public class Server {
         
         try {
             server_socket = new ServerSocket(8888);
-            //Server의 메인쓰레드는 게속해서 사용자의 접속을 받음
+
             while(true)
             {
                 socket = server_socket.accept();
